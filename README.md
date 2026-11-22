@@ -159,6 +159,7 @@ checks should be performed with body electrodes disconnected.
   been used.
 - Motion, muscle activity, poor electrode contact, mains interference, missed
   peaks, and extra detections can affect the waveform and BPM estimate.
+- A brief ADC spike spike can suppress beat detection for the rest of a run. A synthetic 60 BPM reads as 60 BPM normally, but adding 2 full-scale ADC samples 200ms after startup produced zero detected beats.
 
 For repeatable follow-up measurements, record simultaneous readings over steady
 30-60 second intervals, along with electrode placement, activity, and signal
